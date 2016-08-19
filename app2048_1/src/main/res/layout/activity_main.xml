@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.app2048_1.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="8px"
+            android:text="1024"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:background="@drawable/bg2048"
+            android:id="@+id/tv_mainActivity_targetcore"/>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:gravity="center"
+                android:layout_margin="8px"
+                android:textSize="25sp"
+                android:background="@drawable/titlescore" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:layout_margin="8px"
+                android:textSize="15sp"
+                android:background="@drawable/bg2048"
+                android:id="@+id/tv_mainActivity_score"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Record"
+                android:gravity="center"
+                android:layout_margin="8px"
+                android:textSize="25sp"
+                android:background="@drawable/titlescore"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center"
+                android:layout_margin="8px"
+                android:textSize="15sp"
+                android:background="@drawable/bg2048"
+                android:id="@+id/tv_mainActivity_record"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--棋盘布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#888888"
+        android:id="@+id/rl_mainactivity_center"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="30px"
+        >
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8px"
+            android:text="REVERT"
+            android:background="@drawable/button_bg"
+            android:id="@+id/bu_mainActivity_revert"/>
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8px"
+            android:text="RESTART"
+            android:background="@drawable/button_bg"
+            android:id="@+id/bu_mainActivity_restart"/>
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8px"
+            android:text="ORTIONS"
+            android:background="@drawable/button_bg"
+            android:id="@+id/bu_mainActivity_options"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+    </LinearLayout>
+</LinearLayout>
